@@ -4,6 +4,7 @@ import './App.css'
 import { Logo } from './Logo'
 import { Start } from './Start'
 import { useQuestionsStore } from './store/questions'
+import { Game } from './Game'
 
 function App() {
   const questions = useQuestionsStore(state => state.questions)
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <main>
-       <Container maxWidth='sm'>
+       <Container maxWidth='sm' style={{backgroundColor:'#11a63d'}}>
 
           <Stack direction='row' gap={2} alignItems='center' justifyContent='center' marginBottom={2}>
             <Logo />
@@ -19,10 +20,10 @@ function App() {
               Geography Quiz
             </Typography>
           </Stack>
-{/* 
+
 {questions.length === 0 && <Start />}
-{questions.length > 0 && <Game />} */}
-          <Start />
+{questions.length > 0 && <Game />}
+          
       </Container>
        
     </main>

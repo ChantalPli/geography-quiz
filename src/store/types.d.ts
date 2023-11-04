@@ -3,7 +3,7 @@ export interface Question {
   question: string
   answers: string[]
   correctAnswer: number
-  userSelectedAnswer?: undefined
+  userSelectedAnswer?: number
   isCorrectUserAnswer?: boolean
 
 }

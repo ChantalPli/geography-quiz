@@ -11,8 +11,11 @@ export const Start = () => {
   }
 
   return (
+    <div style={{marginTop:'16px'}}>
     <Button onClick={handleClick} variant='contained'>
       Let's  Start!
     </Button>
+
+    </div>
   )
 }
