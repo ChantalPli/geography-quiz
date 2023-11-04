@@ -12,7 +12,7 @@ function App() {
 
   return (
     <main>
-       <Container maxWidth='sm' style={{backgroundColor:'#11a63d'}}>
+       <Container maxWidth='sm'>
 
           <Stack direction='row' gap={2} alignItems='center' justifyContent='center' marginBottom={2}>
             <Logo />
