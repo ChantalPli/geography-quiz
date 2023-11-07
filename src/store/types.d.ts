@@ -5,5 +5,4 @@ export interface Question {
   correctAnswer: number
   userSelectedAnswer?: number
   isCorrectUserAnswer?: boolean
-
 }
